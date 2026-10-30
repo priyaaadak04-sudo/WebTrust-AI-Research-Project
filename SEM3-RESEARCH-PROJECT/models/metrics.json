@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "dataset": "synthetic_test_dataset.csv",
+    "total_rows": 200,
+    "phishing_count": 100,
+    "legitimate_count": 100,
+    "label_column": "label",
+    "label_encoding": {
+      "phishing": 1,
+      "legitimate": 0
+    },
+    "test_fraction": 0.2,
+    "random_seed": 42,
+    "trained_at_utc": "2026-10-28T05:18:49.030041+00:00"
+  },
+  "model1": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "roc_auc": 1.0,
+    "confusion_matrix": {
+      "tn": 20,
+      "fp": 0,
+      "fn": 0,
+      "tp": 20
+    },
+    "classification_report": {
+      "Legitimate": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 20.0
+      },
+      "Phishing": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 20.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      }
+    },
+    "test_size": 40,
+    "test_phishing_count": 20,
+    "test_legit_count": 20,
+    "training_duration_seconds": 0.42,
+    "feature_count": 25,
+    "feature_names": [
+      "url_length",
+      "url_hostname_length",
+      "url_path_length",
+      "url_query_length",
+      "url_fragment_length",
+      "url_num_query_params",
+      "char_count_dot",
+      "char_count_hyphen",
+      "char_count_underscore",
+      "char_count_slash",
+      "char_count_percent",
+      "char_count_at",
+      "host_num_labels",
+      "host_subdomain_count",
+      "domain_registered_length",
+      "kw_num_matched",
+      "flag_uses_https",
+      "flag_is_ip_address",
+      "flag_has_non_default_port",
+      "flag_has_at_symbol",
+      "flag_has_query",
+      "flag_has_fragment",
+      "flag_has_punycode",
+      "flag_has_keyword",
+      "flag_is_url_shortener"
+    ],
+    "train_size": 160,
+    "train_phishing_count": 80,
+    "train_legit_count": 80
+  },
+  "model2": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "roc_auc": 1.0,
+    "confusion_matrix": {
+      "tn": 20,
+      "fp": 0,
+      "fn": 0,
+      "tp": 20
+    },
+    "classification_report": {
+      "Legitimate": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 20.0
+      },
+      "Phishing": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 20.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      }
+    },
+    "test_size": 40,
+    "test_phishing_count": 20,
+    "test_legit_count": 20,
+    "training_duration_seconds": 0.35,
+    "feature_count": 39,
+    "feature_names": [
+      "url_length",
+      "url_hostname_length",
+      "url_path_length",
+      "url_query_length",
+      "url_fragment_length",
+      "url_num_query_params",
+      "char_count_dot",
+      "char_count_hyphen",
+      "char_count_underscore",
+      "char_count_slash",
+      "char_count_percent",
+      "char_count_at",
+      "host_num_labels",
+      "host_subdomain_count",
+      "domain_registered_length",
+      "kw_num_matched",
+      "flag_uses_https",
+      "flag_is_ip_address",
+      "flag_has_non_default_port",
+      "flag_has_at_symbol",
+      "flag_has_query",
+      "flag_has_fragment",
+      "flag_has_punycode",
+      "flag_has_keyword",
+      "flag_is_url_shortener",
+      "sec_has_csp",
+      "sec_has_hsts",
+      "sec_has_xcto",
+      "sec_has_xfo",
+      "sec_has_referrer",
+      "sec_has_permissions",
+      "sec_cookie_any",
+      "sec_cookie_secure",
+      "sec_cookie_httponly",
+      "sec_cookie_samesite",
+      "sec_tls_applicable",
+      "sec_tls_verified",
+      "sec_tls_days_remain",
+      "sec_finding_count"
+    ],
+    "train_size": 160,
+    "train_phishing_count": 80,
+    "train_legit_count": 80
+  }
+}

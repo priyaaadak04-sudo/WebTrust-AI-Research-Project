@@ -1,0 +1,3 @@
+model,status,accuracy,precision,recall,f1_score,fpr,fnr,roc_auc,test_size,feature_count,train_size,training_duration_s,cm_tn,cm_fp,cm_fn,cm_tp
+Model 1 (Baseline),trained,1.0,1.0,1.0,1.0,0.0,0.0,1.0,40,25,160,0.42,20,0,0,20
+Model 2 (Extended),trained,1.0,1.0,1.0,1.0,0.0,0.0,1.0,40,39,160,0.35,20,0,0,20
